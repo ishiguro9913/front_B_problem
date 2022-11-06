@@ -15,24 +15,27 @@ class MemoApp extends React.Component {
   }
 
   addMemo = content => {
+    const { memos, nextId } = this.state; 
     this.setState({
-      memos: [...this.state.memos, { id: this.state.nextId, content: content }],
+      memos: [...memos, { id: nextId, content: content }],
       nextId: this.state.nextId + 1
     });
   };
 
   deleteMemo = id => {
-    const filteredArray = this.state.memos.filter(memo => {
+    const { memos } = this.state;
+    const filteredArray = memos.filter(memo => {
       return memo.id !== id;
     });
     this.setState({ memos: filteredArray });
   };
 
   render() {
+    const { memos } = this.state;
     return (
       <div>
         <Form addMemo={this.addMemo} />
-        <List memos={this.state.memos} deleteMemo={this.deleteMemo} />
+        <List memos={memos} deleteMemo={this.deleteMemo} />
       </div>
     );
   }

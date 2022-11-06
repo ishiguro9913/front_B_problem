@@ -3,10 +3,11 @@ import { render } from "react-dom";
 
 class List extends React.Component {
   render() {
-    const list = this.props.memos.map(memo => {
+    const { memos, deleteMemo } = this.props;
+    const list = memos.map(memo => {
       return (
         <li>
-          <button onClick={() => this.props.deleteMemo(memo.id)}>X</button>
+          <button onClick={() => deleteMemo(memo.id)}>X</button>
             <p>{memo.content}</p>
         </li>
       );

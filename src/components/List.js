@@ -7,13 +7,13 @@ class List extends React.Component {
       return (
         <li>
           <button onClick={() => this.props.deleteMemo(memo.id)}>X</button>
-          {memo.content}
+            <p>{memo.content}</p>
         </li>
       );
     });
     return (
-      <div>
-        <ul>{list}</ul>
+      <div class="list">
+        {list}
       </div>
     );
   }

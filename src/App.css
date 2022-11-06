@@ -36,3 +36,67 @@
     transform: rotate(360deg);
   }
 }
+
+/* フォーム部分、リスト部分共通のCSS */
+body {
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  font-size: 16px;
+}
+
+/*フォーム部分用のCSS*/
+form {
+  width: 100%;
+  margin: 10% 0;
+  height: 30px;
+}
+
+input[type="text"] {
+  width: 240px;
+  height: 100%;
+  border: solid;
+  border-width: 1px;
+  border-radius: 0px;
+  border-color: navy;
+}
+
+input[type="submit"] {
+  width: 50px;
+  height: 30px;
+  margin-left: 3px;
+  border: solid;
+  border-width: 1px;
+  border-color: navy;
+  text-align:center;
+  color:#fff;
+  background-color: navy;
+}
+
+/*リスト部分用のCSS*/
+.list {
+  align-items: center;
+  list-style: none;
+}
+
+.list li {
+  margin: 5px 0;
+  display: flex;
+  border: solid;
+  border-width: 1px;
+  border-color: navy;
+}
+
+.list li button{
+  line-height: 50px;
+  width: 50px;
+  border-width: 1px;
+  border-radius: 0px;
+  border-color: navy;
+  color:#fff;
+  background-color: navy;
+}
+
+.list li p{
+  padding-left: 20px;
+}

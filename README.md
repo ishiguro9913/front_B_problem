@@ -18,23 +18,29 @@ Reactを使用しました。
 
 ## ローカルでの実行方法
 
+コードのクローンをしてください
 ```
-# コードのクローンをしてください
 $ git clone https://github.com/ishiguro9913/front_B_problem
 $ cd front_B_problem
+```
 
-#  パッケージの更新の確認をしてください
+パッケージの更新の確認をしてください
+```
 $ npm install -g npm-check-updates
+```
 
-# package.jsonを更新してください
+package.jsonを更新してください
+```
 $ ncu -u
+```
 
-# Reactを起動してください
+Reactを起動してください
+```
 $ npm install
 $ npm start
 ```
 
-以上を実行後にローカルサーバー（http://localhost:3000/） へアクセスしてください。
+以上を実行後にローカルサーバー（http://localhost:3000/ ）へアクセスしてください。
 
 ※動作確認環境  
 macOS Big Sur バージョン 11.4  

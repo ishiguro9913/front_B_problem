@@ -37,12 +37,15 @@
   }
 }
 
+/* フォーム部分、リスト部分共通のCSS */
 body {
   margin-left: auto;
   margin-right: auto;
   width: 300px;
+  font-size: 16px;
 }
 
+/*フォーム部分用のCSS*/
 form {
   width: 100%;
   margin: 10% 0;
@@ -66,10 +69,30 @@ input[type="submit"] {
   background-color: navy;
 }
 
+/*リスト部分用のCSS*/
 .list {
-  text-align: left;
+  align-items: center;
+  list-style: none;
 }
 
-li {
-  list-style: none;
+.list li {
+  margin: 5px 0;
+  display: flex;
+  border: solid;
+  border-width: 1px;
+  border-color: navy;
+}
+
+.list li button{
+  line-height: 50px;
+  width: 50px;
+  border-width: 1px;
+  border-radius: 0px;
+  border-color: navy;
+  color:#fff;
+  background-color: navy;
+}
+
+.list li p{
+  padding-left: 20px;
 }

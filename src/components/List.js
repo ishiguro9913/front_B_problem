@@ -2,22 +2,18 @@ import React from "react";
 import { render } from "react-dom";
 
 class List extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     const list = this.props.memos.map(memo => {
       return (
         <li>
-          #{memo.id} - {memo.content}
+          <button onClick={() => this.props.deleteMemo(memo.id)}>X</button>
+          {memo.content}
         </li>
       );
     });
     return (
       <div>
-        <h2>List</h2>
-        {list}
+        <ul>{list}</ul>
       </div>
     );
   }

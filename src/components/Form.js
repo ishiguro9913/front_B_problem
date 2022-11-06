@@ -12,7 +12,7 @@ class Form extends React.Component {
     return (
       <div>
         <form onSubmit={this.hamdleSubmit}>
-          <input value={this.state.content} onChange={this.handleChange} />
+          <input type="text" value={this.state.content} onChange={this.handleChange} />
           <input type="submit" value="追加" />
         </form>
       </div>

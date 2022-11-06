@@ -36,3 +36,40 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+}
+
+form {
+  width: 100%;
+  margin: 10% 0;
+}
+
+input[type="text"] {
+  width: 250px;
+  height: 30px;
+  border-width: thin;
+  border-radius: 0px;
+  border-color: navy;
+}
+
+input[type="submit"] {
+  height: 30px;
+  margin-left: 3px;
+  border: none;
+  border-color: navy;
+  text-align:center;
+  color:#fff;
+  background-color: navy;
+}
+
+.list {
+  text-align: left;
+}
+
+li {
+  list-style: none;
+}

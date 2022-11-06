@@ -34,6 +34,7 @@ $ npm install
 $ npm start
 ```
 
+以上を実行後にローカルサーバー（http://localhost:3000/） へアクセスしてください。
 
 ※動作確認環境  
 macOS Big Sur バージョン 11.4  

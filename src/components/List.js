@@ -6,9 +6,9 @@ class List extends React.Component {
     const { memos, deleteMemo } = this.props;
     const list = memos.map(memo => {
       return (
-        <li>
+        <li key={memo.id}>
           <button onClick={() => deleteMemo(memo.id)}>X</button>
-            <p>{memo.content}</p>
+          <p>{memo.content}</p>
         </li>
       );
     });

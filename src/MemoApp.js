@@ -9,22 +9,23 @@ class MemoApp extends React.Component {
     super(props);
 
     this.state = {
-      memos: [
-        { id: 1, content: "one" },
-        { id: 2, content: "two" },
-        { id: 3, content: "three" },
-        { id: 4, content: "four" },
-        { id: 5, content: "five" }
-      ],
+      memos: [],
       nextId: 0
     };
   }
+
+  addMemo = content => {
+    this.setState({
+      memos: [...this.state.memos, { id: this.state.nextId, content: content }],
+      nextId: this.state.nextId + 1
+    });
+  };
 
   render() {
     return (
       <div>
         <h2>MemoApp</h2>
-        <Form />
+        <Form addMemo={this.addMemo} />
         <List memos={this.state.memos} />
       </div>
     );

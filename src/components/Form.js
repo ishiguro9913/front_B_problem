@@ -5,7 +5,7 @@ class Form extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = { content: "content" };
+    this.state = { content: "" };
   }
 
   render() {
@@ -27,7 +27,7 @@ class Form extends React.Component {
 
   hamdleSubmit = event => {
     event.preventDefault();
-    alert(this.state.content);
+    this.props.addMemo(this.state.content);
     this.setState({ content: "" });
   };
 }
